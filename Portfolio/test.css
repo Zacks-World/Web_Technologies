@@ -1,0 +1,201 @@
+/* General Styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #1e1e2f;
+    color: #ffffff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.border {
+    border: 1px solid #444;
+}
+
+/* Navigation Bar */
+.navbar {
+    position: fixed;
+    top: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    box-sizing: border-box; /* Ensures padding is included in width */
+    z-index: 1000; /* Ensures navbar stays on top of other content */
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navelements {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navelements a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.navelements a:hover {
+    color: #007bff;
+}
+
+/* Home Section */
+.Home {
+    display: flex;
+    align-items: center;
+    padding: 10rem 2rem;
+    min-height: 100vh;
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.Hi {
+    font-size: 3rem;
+    line-height: 1.2;
+}
+
+.Hi p {
+    margin: 0;
+}
+
+.myImage img {
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* About Me Section */
+.AboutMe {
+    padding: 4rem 2rem;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.AboutParaghaphs {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+/* Projects Section */
+.Projects {
+    padding: 4rem 2rem;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ProjectGroup {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.Project {
+    background-color: #2c2c44;
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: calc(33.33% - 2rem);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+
+}
+
+.Project:hover {
+    transform: translateY(-10px);
+}
+
+.Project h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.Project p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Contact Section */
+.Contact {
+    padding: 4rem 2rem;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.Form input, .Form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #2c2c44;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.Form button {
+    padding: 0.75rem 2rem;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.Form button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+    background-color: #333;
+    margin-top: 2rem;
+}
+a{
+    text-decoration: none;
+}
+.Title{
+    font-family:'Poppins';
+    font-size: 40px;
+}
